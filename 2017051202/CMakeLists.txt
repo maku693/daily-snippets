@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
 
-project("2017051301")
+project("2017051201")
 
 find_package(Vulkan REQUIRED)
 
