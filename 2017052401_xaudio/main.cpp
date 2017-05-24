@@ -1,4 +1,4 @@
-﻿#include <windowsx.h>
+#include <windowsx.h>
 #include <xaudio2.h>
 
 #include <cstdint>
