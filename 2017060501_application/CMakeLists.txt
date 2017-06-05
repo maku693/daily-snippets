@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
+
+project("2017060501")
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+file (GLOB SOURCES "${CMAKE_SOURCE_DIR}/*.cpp")
+
+add_executable(${PROJECT_NAME} WIN32 ${SOURCES})
+
+target_include_directories(${PROJECT_NAME} PUBLIC
+  ${CMAKE_CURRENT_SOURCE_DIR}
+  )
