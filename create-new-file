@@ -1,0 +1,8 @@
+#! /bin/sh
+if [ -z $1 ]; then
+  echo "USAGE: create-new-file FILENAME"
+  exit 1
+fi;
+
+file="$(date +%Y%m%d)${1}"
+touch $file && echo "${file} created."
