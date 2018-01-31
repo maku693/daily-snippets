@@ -1,0 +1,36 @@
+#a,
+#b {
+  height: 200%;
+  overflow: hidden;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 200%;
+}
+
+#a {
+  left: -50%;
+  top: -50%;
+}
+
+#b {
+  left: 0;
+  top: 0;
+}
+
+#a::before, #b::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+}
+
+#a::before {
+  background-color: red;
+}
+
+#b::before {
+  background-color: green;
+}
