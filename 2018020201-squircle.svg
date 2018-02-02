@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200px" height="200px" viewBox="0 0 1 1" version="1.1">
+  <rect
+  width="1"
+  height="1"
+  rx="0.2"
+  ry="0.2"
+  fill="red"/>
+  <path
+    d="m 0.5,0 c -0.5,0 -0.5,0 -0.5,0.5 s 0,0.5 0.5,0.5 0.5,0 0.5,-0.5 0,-0.5 -0.5,-0.5 Z"
+    fill="green"/>
+</svg>
