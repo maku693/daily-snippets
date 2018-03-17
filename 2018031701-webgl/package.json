@@ -1,0 +1,7 @@
+{
+  "name": "2018031701-webgl",
+  "private": true,
+  "dependencies": {
+    "gl-matrix": "^2.4.0"
+  }
+}
