@@ -1,5 +1,5 @@
-#include <cstddef>
 #include <cmath>
+#include <cstddef>
 
 template <class T, std::size_t N> class vec {
 public:
@@ -26,9 +26,7 @@ public:
     pointer data() noexcept { return v; }
     const_pointer data() const noexcept { return v; }
 
-    value_type length() noexcept {
-        return dot(*this, *this);
-    }
+    value_type length() const noexcept { return std::sqrt(dot(*this, *this)); }
 };
 
 template <class T, std::size_t N>
@@ -67,7 +65,7 @@ constexpr auto operator*(const vec<T, N>& lhs, U rhs) noexcept
 template <class T, std::size_t N>
 constexpr auto dot(const vec<T, N>& lhs, const vec<T, N>& rhs) noexcept
 {
-    T accum {};
+    T accum{};
     for (std::ptrdiff_t i = 0; i < N; i++) {
         accum += lhs[i] * rhs[i];
     }
@@ -310,7 +308,7 @@ int main()
         constexpr mat2x2 lhs{ 2, 1, 1, 0 };
         constexpr mat2x2 rhs{ 1, -1, 0, -2 };
         constexpr auto actual = lhs * rhs;
-        constexpr mat2x2 expected = {2, -4, 1, -1};
+        constexpr mat2x2 expected = { 2, -4, 1, -1 };
         static_assert(actual == expected);
     }
 
