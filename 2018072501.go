@@ -1,4 +1,4 @@
-package main
+package daily-snippets
 
 import "time"
 
