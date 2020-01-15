@@ -1,0 +1,9 @@
+original:	151d31d0-6ed0-4e6a-bb4a-7f4822544e23	36
+base32.StdEncoding:	CUOTDUDO2BHGVO2KP5ECEVCOEM======	32
+base32.StdEncoding.WithPadding(base32.NoPadding):	CUOTDUDO2BHGVO2KP5ECEVCOEM	26
+base32.HexEncoding:	2KEJ3K3EQ176LEQAFT424L2E4C======	32
+base32.HexEncoding.WithPadding(base32.NoPadding):	2KEJ3K3EQ176LEQAFT424L2E4C	26
+base64.StdEncoding:	FR0x0G7QTmq7Sn9IIlROIw==	24
+base64.RawStdEncoding:	FR0x0G7QTmq7Sn9IIlROIw	22
+base64.URLEncoding:	FR0x0G7QTmq7Sn9IIlROIw==	24
+base64.RawURLEncoding:	FR0x0G7QTmq7Sn9IIlROIw	22
